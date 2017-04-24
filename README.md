@@ -2,7 +2,8 @@
 
 ```
 $ git clone https://github.com/chiswicked/event-test.git
-$ event-test
+$ cd event-test
 $ npm i
-$ node spike.json
+$ npm test
+$ node spike.js
 ```
