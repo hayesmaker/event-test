@@ -11,7 +11,7 @@ class Shape extends EventEmitter {
   }
 }
 
-export default class Square extends Shape {
+class Square extends Shape {
   constructor(id) {
     super(id);
   }
@@ -26,6 +26,8 @@ export default class Square extends Shape {
     console.log('Square action', this.id);
   }
 }
+
+module.exports = Square;
 
 class Circle extends Shape {
   constructor(id) {

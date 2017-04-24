@@ -1,7 +1,6 @@
-import assert from 'assert';
-import sinon from 'sinon';
-//unit under test
-import Square from '../spike';
+var assert = require('assert');
+var sinon = require('sinon');
+var Square = require('../spike');
 
 describe('Spike event emitter tests', function () {
   var square;
