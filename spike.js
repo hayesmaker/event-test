@@ -11,21 +11,19 @@ class Shape extends EventEmitter {
   }
 }
 
-class Square extends Shape {
+export default class Square extends Shape {
   constructor(id) {
     super(id);
   }
   activate() {
-    this.on('SQUARE', this.action.bind(this));
+    this.on('SQUARE', this.action);
   }
   deactivate() {
-    const func = this.action.bind(this);
-    func();
-    this.off('SQUARE', func);
+    this.off('SQUARE', this.action);
     // allOff(this);
   }
   action() {
-    console.log('Square action');
+    console.log('Square action', this.id);
   }
 }
 
