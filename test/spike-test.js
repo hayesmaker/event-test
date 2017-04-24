@@ -1,6 +1,7 @@
 import assert from 'assert';
-import Square from '../spike';
 import sinon from 'sinon';
+//unit under test
+import Square from '../spike';
 
 describe('Spike event emitter tests', function () {
   var square;
@@ -16,9 +17,6 @@ describe('Spike event emitter tests', function () {
   it('Square should be created ok', function () {
     //sanity check imports by testing if mySquare is not null or undefined
     assert.ok(square);
-  });
-
-  it('Square id should be 1', function () {
     assert.equal(square.id, 1);
   });
 
